@@ -25,7 +25,7 @@ steps:
     provider: 'azurerm'
     command: 'init'
     workingDirectory: '$(System.DefaultWorkingDirectory)/skip-step'
-    backendServiceArm: '$(subscription)'
+    backendServiceArm: 'Free Trial (99771db2-a3c4-4a7f-95b0-232159963226)'
     backendAzureRmResourceGroupName: '$(resourceGroup)'
     backendAzureRmStorageAccountName: '$(storageAccount)'
     backendAzureRmContainerName: '$(container)'
@@ -38,8 +38,7 @@ steps:
     command: 'plan'
     workingDirectory: '$(System.DefaultWorkingDirectory)/skip-step'
     commandOptions: '-out=tfplan'
-    # commandOptions: '-detailed-exitcode -out=tfplan'
-    environmentServiceNameAzureRM: '$(subscription)'
+    environmentServiceNameAzureRM: 'Free Trial (99771db2-a3c4-4a7f-95b0-232159963226)'
 
 - task: PowerShell@2
   displayName: detect any terraform change
@@ -69,4 +68,4 @@ steps:
     command: 'apply'
     workingDirectory: '$(System.DefaultWorkingDirectory)/skip-step'
     commandOptions: 'tfplan'
-    environmentServiceNameAzureRM: '$(subscription)'
+    environmentServiceNameAzureRM: 'Free Trial (99771db2-a3c4-4a7f-95b0-232159963226)'
