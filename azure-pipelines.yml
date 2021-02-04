@@ -8,7 +8,7 @@ variables:
   subscription: Free Trial (99771db2-a3c4-4a7f-95b0-232159963226)
   resourceGroup: kubernetealex
   storageAccount: storeaccountalex
-  container: kubernetealex
+  container: kubernetealex2
   tfstateFile: terraform.tfstate
   anyTfChanges: false
 
