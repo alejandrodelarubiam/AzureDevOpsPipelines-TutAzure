@@ -5,10 +5,10 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  subscription: Visual Studio Enterprise(17b12858-3960-4e6f-a663-a06fdae23428)
-  resourceGroup: resourcegroup-tfstate
-  storageAccount: terraformtfstateskip
-  container: tfstate
+  subscription: Free Trial (99771db2-a3c4-4a7f-95b0-232159963226)
+  resourceGroup: KuberneteAlex
+  storageAccount: storeaccountalex
+  container: KuberneteAlex
   tfstateFile: terraform.tfstate
   anyTfChanges: false
 
