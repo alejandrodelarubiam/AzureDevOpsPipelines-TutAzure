@@ -6,9 +6,9 @@ pool:
 
 variables:
   subscription: Free Trial (99771db2-a3c4-4a7f-95b0-232159963226)
-  resourceGroup: KuberneteAlex
+  resourceGroup: kubernetealex
   storageAccount: storeaccountalex
-  container: KuberneteAlex
+  container: kubernetealex
   tfstateFile: terraform.tfstate
   anyTfChanges: false
 
