@@ -15,15 +15,14 @@ variables:
 steps:
 
 - task: ms-devlabs.custom-terraform-tasks.custom-terraform-installer-task.TerraformInstaller@0
-  displayName: install Terraform v0.12.28
+  displayName: install Terraform v0.13.0
   inputs:
-    terraformVersion: '0.12.28'
+    terraformVersion: '0.13.0'
 
 - task: TerraformTaskV1@0
   displayName: terraform init
   inputs:
-    provider: 'azurerm' {version = "=2.40.0"
-    }
+    provider: 'azurerm' 
     command: 'init'
     workingDirectory: '$(System.DefaultWorkingDirectory)/skip-step'
     backendServiceArm: 'Free Trial (99771db2-a3c4-4a7f-95b0-232159963226)'
