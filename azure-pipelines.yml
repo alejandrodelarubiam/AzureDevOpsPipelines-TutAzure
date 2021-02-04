@@ -22,7 +22,7 @@ steps:
 - task: TerraformTaskV1@0
   displayName: terraform init
   inputs:
-    provider: 'azurerm' 
+    provider: 'azurerm'
     command: 'init'
     workingDirectory: '$(System.DefaultWorkingDirectory)/skip-step'
     backendServiceArm: 'Free Trial (99771db2-a3c4-4a7f-95b0-232159963226)'
